@@ -74,5 +74,9 @@ puts "the secret code is #{zero_count}"
 
 
 <br />
+Here is the badge I now have. I'm so proud. This is actually the one after finishing Day 2, part 1, as well.
 
+![Day 2 Part 1 Badge](/images/advent_of_code_day_2_part_1_badge.jpg)
+
+<br />
 Knowing me, this could be the last time this site is updated. Actually, I already did part 1 of Day 2. Minimally, I'll share that shortly.
