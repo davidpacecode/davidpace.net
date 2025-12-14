@@ -7,7 +7,7 @@ categories: updates programming
 
 I should start out with some introduction to this website. The reality is that this will likely turn into yet another experiment that I'll drop when the next idea arises. That said, there's a small chance that this will turn into my personal website.
 
-I started the [2025 Advent of Code](https://adventofcode.com/) today. No committment to actually finish, but I might. For now, I'm starting with Ruby to see if I can actually get profiency with it.
+I started the [2025 Advent of Code](https://adventofcode.com/) today. No committment to actually finish, but I might. For now, I'm starting with Ruby to see if I can actually get proficient with it.
 
 Here is my working submission for Day 1, part 1:
 
