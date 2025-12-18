@@ -1,0 +1,89 @@
+/*! Copyright 2025 Fonticons, Inc. - https://webawesome.com/license */
+import {
+  include_styles_default
+} from "./chunk.UFN3LUXY.js";
+import {
+  requestInclude
+} from "./chunk.WWAF73CI.js";
+import {
+  WaLoadEvent
+} from "./chunk.N5ARBYDI.js";
+import {
+  watch
+} from "./chunk.M4ZSSH5B.js";
+import {
+  WebAwesomeElement
+} from "./chunk.ZXSQBIOQ.js";
+import {
+  __decorateClass
+} from "./chunk.I37X32SU.js";
+
+// _bundle_/src/components/include/include.ts
+import { html } from "lit";
+import { customElement, property } from "lit/decorators.js";
+
+// _bundle_/src/events/include-error.ts
+var WaIncludeErrorEvent = class extends Event {
+  constructor(detail) {
+    super("wa-include-error", { bubbles: true, cancelable: false, composed: true });
+    this.detail = detail;
+  }
+};
+
+// _bundle_/src/components/include/include.ts
+var WaInclude = class extends WebAwesomeElement {
+  constructor() {
+    super(...arguments);
+    this.mode = "cors";
+    this.allowScripts = false;
+  }
+  executeScript(script) {
+    const newScript = document.createElement("script");
+    [...script.attributes].forEach((attr) => newScript.setAttribute(attr.name, attr.value));
+    newScript.textContent = script.textContent;
+    script.parentNode.replaceChild(newScript, script);
+  }
+  async handleSrcChange() {
+    try {
+      const src = this.src;
+      const file = await requestInclude(src, this.mode);
+      if (src !== this.src) {
+        return;
+      }
+      if (!file.ok) {
+        this.dispatchEvent(new WaIncludeErrorEvent({ status: file.status }));
+        return;
+      }
+      this.innerHTML = file.html;
+      if (this.allowScripts) {
+        [...this.querySelectorAll("script")].forEach((script) => this.executeScript(script));
+      }
+      this.dispatchEvent(new WaLoadEvent());
+    } catch {
+      this.dispatchEvent(new WaIncludeErrorEvent({ status: -1 }));
+    }
+  }
+  render() {
+    return html`<slot></slot>`;
+  }
+};
+WaInclude.css = include_styles_default;
+__decorateClass([
+  property()
+], WaInclude.prototype, "src", 2);
+__decorateClass([
+  property()
+], WaInclude.prototype, "mode", 2);
+__decorateClass([
+  property({ attribute: "allow-scripts", type: Boolean })
+], WaInclude.prototype, "allowScripts", 2);
+__decorateClass([
+  watch("src")
+], WaInclude.prototype, "handleSrcChange", 1);
+WaInclude = __decorateClass([
+  customElement("wa-include")
+], WaInclude);
+
+export {
+  WaInclude
+};
