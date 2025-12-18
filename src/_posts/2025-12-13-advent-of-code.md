@@ -2,7 +2,7 @@
 layout: post
 title:  "Advent of Code Day 1"
 date:   2025-12-13 19:55:51 -0600
-categories: updates programming
+categories: tech advent_of_code
 ---
 
 I should start out with some introduction to this website. The reality is that this will likely turn into yet another experiment that I'll drop when the next idea arises. That said, there's a small chance that this will turn into my personal website.
