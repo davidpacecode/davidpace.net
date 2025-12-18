@@ -6,6 +6,7 @@ import "./webawesome/dist/components/button/button.js"
 import "./webawesome/dist/components/icon/icon.js"
 import "./webawesome/dist/components/spinner/spinner.js"
 import "./webawesome/dist/components/card/card.js"
+import "./webawesome/dist/components/page/page.js"
 
 // Import all JavaScript & CSS files from src/_components
 import components from "$components/**/*.{js,jsx,js.rb,css}"

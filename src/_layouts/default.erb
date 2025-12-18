@@ -7,14 +7,18 @@
     <script src="https://kit.fontawesome.com/dc8a27351f.js" crossorigin="anonymous"></script>
   </head>
   <body class="<%= data.layout %> <%= data.page_class %>">
-    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+    <wa-page class="wa-system">
+      <header slot="header">
+        <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+      </header>
 
-    <main>
-      <wa-card class="wa-gap-2xl" style="max-width: 900px; wa-color-primary: var(--wa-color-gray-95); background-color: var(--wa-color-blue-95);">
-        <%= yield %>
-      </wa-card>
-    </main>
+      <main>
+        <wa-card class="wa-gap-2xl" style="max-width: 900px; wa-color-primary: var(--wa-color-gray-95); background-color: var(--wa-color-blue-95);">
+          <%= yield %>
+        </wa-card>
+      </main>
 
-    <%= render "footer", metadata: site.metadata %>
+      <%= render "footer", metadata: site.metadata %>
+    </wa-page>
   </body>
 </html>
