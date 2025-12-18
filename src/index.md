@@ -5,7 +5,3 @@ layout: default
 ---
 
 
-<wa-button>Click me</wa-button>
-
-----
-

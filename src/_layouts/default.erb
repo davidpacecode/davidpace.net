@@ -10,7 +10,9 @@
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>
-      <%= yield %>
+      <wa-card>
+        <%= yield %>
+      </wa-card>
     </main>
 
     <%= render "footer", metadata: site.metadata %>
