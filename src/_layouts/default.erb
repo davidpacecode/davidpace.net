@@ -10,7 +10,7 @@
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>
-      <wa-card>
+      <wa-card class="wa-gap-2xl" style="max-width: 900px; wa-color-primary: var(--wa-color-gray-95); background-color: var(--wa-color-blue-95);">
         <%= yield %>
       </wa-card>
     </main>
