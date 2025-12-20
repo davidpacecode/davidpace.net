@@ -2,6 +2,7 @@
 layout: post
 title:  "Advent of Code Day 3"
 date:   2025-12-18 15:45:00 -0600
+duration: ~4 min read
 categories: tech advent_of_code
 ---
 

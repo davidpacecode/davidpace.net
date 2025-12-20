@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Advent of Code Day 1"
+title:  "Attemping the 2025 Advent of Code. Also, my attempt at Day 1"
 date:   2025-12-13 19:55:51 -0600
+duration: ~5 min read
 categories: tech advent_of_code
 ---
 
