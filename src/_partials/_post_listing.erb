@@ -15,7 +15,7 @@
         <% end %>
       </div>
     </section>
-    <p>"<%= post.content.to_s[0..150] %>..."</p>
+    <p><%= markdownify "\"" + content[0..150] + "...\"" %></p>
     <div class="wa-cluster">
       <a href="<%= post.relative_url %>" class="wa-cluster wa-gap-2xs"><span>Read More</span><wa-icon name="angle-right"></wa-icon></a>
     </div>  

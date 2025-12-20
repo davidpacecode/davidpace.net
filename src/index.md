@@ -24,7 +24,7 @@ layout: default
   </div>
 
   <% collections.posts.each do |post| %>
-    <%= render "post_listing", post: post %>
+    <%= render "post_listing", post: post, content: markdownify(post.content) %>
   <% end %>
 </div>
 
