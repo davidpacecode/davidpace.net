@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Advent of Code Day 3"
+title:  "Advent of Code Day 3 - part 1 was super easy, part 2 was freaking hard"
 date:   2025-12-18 15:45:00 -0600
 duration: ~4 min read
 categories: tech advent_of_code
